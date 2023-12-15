@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  code-generator:
+    image: 'haffose/code-generator:latest'  # Replace 'latest' with the specific tag if needed
+    environment:
+      - "PORT=3000"
+    ports:
+      - "80:3000"
+    volumes:
+      - ./:/app
